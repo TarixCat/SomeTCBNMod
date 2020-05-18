@@ -2,6 +2,7 @@ package me.devtarix.sometcbnmod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,7 +24,7 @@ import java.util.stream.Collectors;
 public class SomeTCBNMod {
 
     //MODID
-    public static String MODID = "somedevtcbnmod";
+    public static final String MODID = "somedevtcbnmod";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -76,12 +77,16 @@ public class SomeTCBNMod {
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = SomeTCBNMod.MODID ,bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
         @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
+        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockReg) {
             // register a new block here
-            LOGGER.info("HELLO from Register Block");
+            LOGGER.info("Register Block");
+        }
+        @SubscribeEvent
+        public static void onItemsRegistry(final RegistryEvent.Register<Item> itemReg) {
+            LOGGER.info("Register Item");
         }
     }
 }
