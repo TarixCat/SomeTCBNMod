@@ -2,9 +2,11 @@ package me.devtarix.sometcbnmod.Init;
 
 import me.devtarix.sometcbnmod.Init.FoodList;
 import me.devtarix.sometcbnmod.SomeTCBNMod;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -41,4 +43,9 @@ public class ModItems {
     public static final RegistryObject<Item> RICECRISPYBAR = ITEMS.register("ricecrispybar", () -> new Item(new Item.Properties().food(FoodList.ricrbar).group(ModGroup.ModItemGroup.instance)));
     public static final RegistryObject<Item> QAZARITE_APPLE = ITEMS.register("qazarite_apple", () -> new Item(new Item.Properties().food(FoodList.qazApple).group(ModGroup.ModItemGroup.instance)));
     public static final RegistryObject<Item> CAT_CREAM = ITEMS.register("cat_cream", () -> new Item(new Item.Properties().food(FoodList.cat_cream).group(ModGroup.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> BETHRA_ORE = ITEMS.register("bethra_ore", () -> new BlockItem(ModBlocks.BETHRA_ORE.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));
+    public static final RegistryObject<Item> NOTUS_ORE = ITEMS.register("notus_ore", () -> new BlockItem(ModBlocks.NOTUS_ORE.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));
+    public static final RegistryObject<Item> RICECRISPY = ITEMS.register("ricecrispy", () -> new BlockItem(ModBlocks.RICECRISPY.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));
+    public static final RegistryObject<Item> QAZARITE_ORE = ITEMS.register("qazarite_ore", () -> new BlockItem(ModBlocks.QAZARITE_ORE.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));
 }
