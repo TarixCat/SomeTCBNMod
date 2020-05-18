@@ -1,12 +1,12 @@
 package me.devtarix.sometcbnmod;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.Item;
+import me.devtarix.sometcbnmod.Init.ModBlocks;
+import me.devtarix.sometcbnmod.Init.ModItems;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -29,17 +29,19 @@ public class SomeTCBNMod {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public SomeTCBNMod() {
-        // Register the setup method for modloading
+        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the enqueueIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        // Register the processIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
-        // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+
+        LOGGER.info("Hello from SomeTCBNMod");
     }
 
     private void setup(final FMLCommonSetupEvent event) {
@@ -77,16 +79,35 @@ public class SomeTCBNMod {
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(modid = SomeTCBNMod.MODID ,bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
+    /*
+    @EventBusSubscriber(modid = SomeTCBNMod.MODID, bus = EventBusSubscriber.Bus.MOD)
+    public final class RegistryEvents {
         @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockReg) {
+        public static void onRegisterBlocks(final RegistryEvent.Register<Block> event) {
+            LOGGER.info("Register Block");
             // register a new block here
             LOGGER.info("Register Block");
         }
+
         @SubscribeEvent
-        public static void onItemsRegistry(final RegistryEvent.Register<Item> itemReg) {
+        public static void onRegisterItems(RegistryEvent.Register<Item> event) {
+            LOGGER.info("Register Item");
+            event.getRegistry().registerAll(
+                    setup(new Item(new Item.Properties()), "test")
+            );
             LOGGER.info("Register Item");
         }
+
+        public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final String name) {
+            return setup(entry, new ResourceLocation(SomeTCBNMod.MODID, name));
+        }
+
+        public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final ResourceLocation registryName) {
+            entry.setRegistryName(registryName);
+            return entry;
+        }
+
     }
+
+     */
 }
