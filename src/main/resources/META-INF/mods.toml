@@ -23,9 +23,9 @@ displayURL="https://github.com/TarixCat/SomeTCBNMod" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="SomeTCBNMod.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks to sebii and Personpacman for suggesting this dumb shit. Never would have made this mod without them" #optional
+credits="Thanks to sebii and Personpacman for suggesting this dumb mod. Never would have made this mod without them" #optional
 # A text field displayed in the mod UI
-authors="DevTarix" #optional
+authors="DevTarix, TarixCat, DevTCBN, TheCatBoxNetwork" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 I have zero clue why this mod is a thing...
