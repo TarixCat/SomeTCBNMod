@@ -1,7 +1,9 @@
 {
   "variants": {
-    "": {
+    "": [
+      {
         "model": "sometcbnmod:block/bethra_ore"
-    }
+      }
+    ]
   }
 }
