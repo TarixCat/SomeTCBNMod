@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 public class SomeTCBNMod {
 
     //MODID
-    public static final String MODID = "somedevtcbnmod";
+    public static final String MODID = "sometcbnmod";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger(MODID + " Main Class");
 

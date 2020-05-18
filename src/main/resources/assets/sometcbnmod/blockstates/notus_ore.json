@@ -1,9 +1,7 @@
 {
   "variants": {
-    "": [
-      {
+    "": {
         "model": "sometcbnmod:block/notus_ore"
       }
-    ]
   }
 }

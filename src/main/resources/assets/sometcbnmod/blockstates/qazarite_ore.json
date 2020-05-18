@@ -1,9 +1,7 @@
 {
   "variants": {
-    "": [
-      {
+    "": {
         "model": "sometcbnmod:block/qazarite_ore"
       }
-    ]
   }
 }
