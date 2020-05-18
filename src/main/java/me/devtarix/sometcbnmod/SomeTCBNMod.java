@@ -26,7 +26,7 @@ public class SomeTCBNMod {
     //MODID
     public static final String MODID = "somedevtcbnmod";
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger(MODID + " Main Class");
 
     public SomeTCBNMod() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -76,38 +76,4 @@ public class SomeTCBNMod {
         // do something when the server starts
         LOGGER.info("Server Starting!");
     }
-
-    // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
-    // Event bus for receiving Registry Events)
-    /*
-    @EventBusSubscriber(modid = SomeTCBNMod.MODID, bus = EventBusSubscriber.Bus.MOD)
-    public final class RegistryEvents {
-        @SubscribeEvent
-        public static void onRegisterBlocks(final RegistryEvent.Register<Block> event) {
-            LOGGER.info("Register Block");
-            // register a new block here
-            LOGGER.info("Register Block");
-        }
-
-        @SubscribeEvent
-        public static void onRegisterItems(RegistryEvent.Register<Item> event) {
-            LOGGER.info("Register Item");
-            event.getRegistry().registerAll(
-                    setup(new Item(new Item.Properties()), "test")
-            );
-            LOGGER.info("Register Item");
-        }
-
-        public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final String name) {
-            return setup(entry, new ResourceLocation(SomeTCBNMod.MODID, name));
-        }
-
-        public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final ResourceLocation registryName) {
-            entry.setRegistryName(registryName);
-            return entry;
-        }
-
-    }
-
-     */
 }
