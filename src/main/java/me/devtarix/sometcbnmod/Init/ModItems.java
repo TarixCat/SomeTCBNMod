@@ -14,8 +14,6 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, SomeTCBNMod.MODID);
 
     //Items Go Here
-    public static final RegistryObject<Item> SOME_DUST = ITEMS.register("some_dust", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance)));
-    public static final RegistryObject<Item> SAMIFACE = ITEMS.register("samiface", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance)));
     public static final RegistryObject<Item> TCBN_LOGO = ITEMS.register("tcbn_logo", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)));
     public static final RegistryObject<Item> OOF = ITEMS.register("oof", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance)));
     public static final RegistryObject<Item> POGCHAMP = ITEMS.register("pogchamp", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance)));
@@ -46,6 +44,5 @@ public class ModItems {
 
     public static final RegistryObject<Item> BETHRA_ORE = ITEMS.register("bethra_ore", () -> new BlockItem(ModBlocks.BETHRA_ORE.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));
     public static final RegistryObject<Item> NOTUS_ORE = ITEMS.register("notus_ore", () -> new BlockItem(ModBlocks.NOTUS_ORE.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));
-    public static final RegistryObject<Item> RICECRISPY = ITEMS.register("ricecrispy", () -> new BlockItem(ModBlocks.RICECRISPY.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));
     public static final RegistryObject<Item> QAZARITE_ORE = ITEMS.register("qazarite_ore", () -> new BlockItem(ModBlocks.QAZARITE_ORE.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));
 }

@@ -15,5 +15,4 @@ public class ModBlocks {
     public static final RegistryObject<Block> BETHRA_ORE = BLOCKS.register("bethra_ore", () -> new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(7,3).harvestLevel(2).harvestTool(ToolType.PICKAXE)));
     public static final RegistryObject<Block> NOTUS_ORE = BLOCKS.register("notus_ore", () -> new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(25,7).harvestLevel(3).harvestTool(ToolType.PICKAXE)));
     public static final RegistryObject<Block> QAZARITE_ORE = BLOCKS.register("qazarite_ore", ()-> new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(30).harvestLevel(8).harvestTool(ToolType.PICKAXE)));
-    public static final RegistryObject<Block> RICECRISPY = BLOCKS.register("ricecrispy", ()-> new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.6f,0.6f).harvestLevel(0).harvestTool(ToolType.PICKAXE)));
 }
