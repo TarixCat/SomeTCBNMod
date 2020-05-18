@@ -11,8 +11,10 @@ Latest Pre-Release: ![GitHub Pre-Releases](https://img.shields.io/github/v/relea
 TheCatBoxNetwork's Lead-Owner, Head Of Staff, And Developers Really Bad Mod...
 
 Credits:
-supersebii (Seb or Not Seb)
+supersebii (Seb, sebii or Not Seb)
+
 Personpacman
+
 Other Anonymous Users
 
 Default branch and current version is master branch,
@@ -20,7 +22,7 @@ Currently Working On is update branch
 
 > Current Version: Unreleased
 
-> Currently Working On: v0.1.0
+> Currently Working On: v1.0
 
 **ALL ALPHA VERSIONS ARE SUBJECT TO REVISION**
 
