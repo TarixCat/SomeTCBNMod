@@ -2,8 +2,10 @@ package me.devtarix.sometcbnmod.Init;
 
 import me.devtarix.sometcbnmod.Init.FoodList;
 import me.devtarix.sometcbnmod.SomeTCBNMod;
+import me.devtarix.sometcbnmod.Util.ModItemTiers;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
@@ -32,7 +34,7 @@ public class ModItems {
     public static final RegistryObject<Item> CRYSTAL_CATALYST = ITEMS.register("crystal_catalyst", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance)));
 
     //ToolItems Go Here
-    public static final RegistryObject<Item> NOTUS_PICKAXE = ITEMS.register("notus_pickaxe", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1).maxDamage(2031).addToolType(ToolType.PICKAXE, 4)));
+    public static final RegistryObject<Item> NOTUS_PICKAXE = ITEMS.register("notus_pickaxe", () -> new PickaxeItem(ModItemTiers.TIERNINE, 10, 2.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1).maxDamage(2031).addToolType(ToolType.PICKAXE, 4)));
 
     //FoodItem's Go Here
     public static final RegistryObject<Item> APPLEBEES = ITEMS.register("applebees", () -> new Item(new Item.Properties().food(FoodList.f20).group(ModGroup.ModItemGroup.instance)));
