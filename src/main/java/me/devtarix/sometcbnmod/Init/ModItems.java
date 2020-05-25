@@ -34,7 +34,7 @@ public class ModItems {
     public static final RegistryObject<Item> CRYSTAL_CATALYST = ITEMS.register("crystal_catalyst", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance)));
 
     //ToolItems Go Here
-    public static final RegistryObject<Item> NOTUS_PICKAXE = ITEMS.register("notus_pickaxe", () -> new PickaxeItem(ModItemTiers.TIERNINE, 10, 2.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1).maxDamage(2031).addToolType(ToolType.PICKAXE, 4)));
+    public static final RegistryObject<Item> TIER_NINE_PICKAXE = ITEMS.register("tier_nine_pickaxe", () -> new PickaxeItem(ModItemTiers.TIERNINE, 10, 2.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)));
 
     //FoodItem's Go Here
     public static final RegistryObject<Item> APPLEBEES = ITEMS.register("applebees", () -> new Item(new Item.Properties().food(FoodList.f20).group(ModGroup.ModItemGroup.instance)));
