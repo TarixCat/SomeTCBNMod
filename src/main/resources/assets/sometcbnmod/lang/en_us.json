@@ -25,5 +25,7 @@
   "block.sometcbnmod.qazarite_ore": "Qazarite Ore",
   "item.sometcbnmod.devtarix": "DevTarix's Logo",
   "item.sometcbnmod.cat_cream": "Cat Cream",
-  "itemGroup.sometcbnmod": "SomeTCBNMod"
+  "itemGroup.sometcbnmod": "SomeTCBNMod",
+  "item.sometcbnmod.test_boots":  "Testing Boots",
+  "item.sometcbnmod.earth_breaker": "Earth Breaker"
 }

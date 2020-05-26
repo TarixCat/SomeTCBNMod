@@ -37,10 +37,10 @@ public class ModItems {
     public static final RegistryObject<Item> CRYSTAL_CATALYST = ITEMS.register("crystal_catalyst", () -> new Item(new Item.Properties().group(ModGroup.ModItemGroup.instance)));
 
     //ToolItems Go Here
-    public static final RegistryObject<PickaxeItem> TIER_NINE_PICKAXE = ITEMS.register("tier_nine_pickaxe", () -> new PickaxeItem(ModItemTiers.TIERNINE, 10, 2.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<PickaxeItem> EARTH_BREAKER = ITEMS.register("earth_breaker", () -> new PickaxeItem(ModItemTiers.TIERNINE, 10, 2.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)));
 
     //ArmourItems Go Here
-    public static final RegistryObject<ArmorItem> TEST_ARMOUR_BOOTS = ITEMS.register("test_armour_boots", () -> new ArmorItem(ModArmourTiers.TEST, EquipmentSlotType.FEET, new Item.Properties().group(ModGroup.ModItemGroup.instance)));
+    public static final RegistryObject<ArmorItem> TEST_BOOTS = ITEMS.register("test_boots", () -> new ArmorItem(ModArmourTiers.TEST, EquipmentSlotType.FEET, new Item.Properties().group(ModGroup.ModItemGroup.instance)));
 
     //FoodItem's Go Here
     public static final RegistryObject<Item> APPLEBEES = ITEMS.register("applebees", () -> new Item(new Item.Properties().food(FoodList.f20).group(ModGroup.ModItemGroup.instance)));
