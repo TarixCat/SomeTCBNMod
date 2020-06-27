@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 
 public enum ModItemTiers implements IItemTier {
 
+
     TIERNINE(9, 15910, 120.0f, 10.0f, 50, () -> {
         return Ingredient.fromItems(ModItems.QAZARITE_INGOT.get());
     });

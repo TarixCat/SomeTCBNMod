@@ -27,5 +27,7 @@
   "item.sometcbnmod.cat_cream": "Cat Cream",
   "itemGroup.sometcbnmod": "SomeTCBNMod",
   "item.sometcbnmod.test_boots":  "Testing Boots",
-  "item.sometcbnmod.earth_breaker": "Earth Breaker"
+  "item.sometcbnmod.earth_breaker": "Earth Breaker",
+  "item.sometcbnmod.test_chestplate": "Testing Chestplate",
+  "item.sometcbnmod.carrot_bottle": "Carrot Juice"
 }

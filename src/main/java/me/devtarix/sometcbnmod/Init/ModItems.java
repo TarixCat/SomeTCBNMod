@@ -5,13 +5,8 @@ import me.devtarix.sometcbnmod.SomeTCBNMod;
 import me.devtarix.sometcbnmod.Util.ModArmourTiers;
 import me.devtarix.sometcbnmod.Util.ModItemTiers;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -38,9 +33,11 @@ public class ModItems {
 
     //ToolItems Go Here
     public static final RegistryObject<PickaxeItem> EARTH_BREAKER = ITEMS.register("earth_breaker", () -> new PickaxeItem(ModItemTiers.TIERNINE, 10, 2.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<SwordItem> HOLY_SWORD = ITEMS.register("holy_sword", () -> new SwordItem(ModItemTiers.TIERNINE, 300, 4.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)));
 
     //ArmourItems Go Here
     public static final RegistryObject<ArmorItem> TEST_BOOTS = ITEMS.register("test_boots", () -> new ArmorItem(ModArmourTiers.TEST, EquipmentSlotType.FEET, new Item.Properties().group(ModGroup.ModItemGroup.instance)));
+    public static final RegistryObject<ArmorItem> TEST_CHESTPLATE = ITEMS.register("test_chestplate", () -> new ArmorItem(ModArmourTiers.NOTUS, EquipmentSlotType.CHEST, new Item.Properties().group(ModGroup.ModItemGroup.instance)));
 
     //FoodItem's Go Here
     public static final RegistryObject<Item> APPLEBEES = ITEMS.register("applebees", () -> new Item(new Item.Properties().food(FoodList.f20).group(ModGroup.ModItemGroup.instance)));
@@ -49,6 +46,7 @@ public class ModItems {
     public static final RegistryObject<Item> RICECRISPYBAR = ITEMS.register("ricecrispybar", () -> new Item(new Item.Properties().food(FoodList.ricrbar).group(ModGroup.ModItemGroup.instance)));
     public static final RegistryObject<Item> QAZARITE_APPLE = ITEMS.register("qazarite_apple", () -> new Item(new Item.Properties().food(FoodList.qazApple).group(ModGroup.ModItemGroup.instance)));
     public static final RegistryObject<Item> CAT_CREAM = ITEMS.register("cat_cream", () -> new Item(new Item.Properties().food(FoodList.cat_cream).group(ModGroup.ModItemGroup.instance)));
+    public static final RegistryObject<Item> CARROT_BOTTLE = ITEMS.register("carrot_bottle", () -> new Item(new Item.Properties().food(FoodList.carrot_juice).group(ModGroup.ModItemGroup.instance)));
 
     //BlockItem's Go Here
     public static final RegistryObject<Item> BETHRA_ORE = ITEMS.register("bethra_ore", () -> new BlockItem(ModBlocks.BETHRA_ORE.get(), new Item.Properties().group(ModGroup.ModItemGroup.instance)));

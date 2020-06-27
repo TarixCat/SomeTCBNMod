@@ -9,4 +9,5 @@ public class FoodList {
     public static Food ricrbar = (new Food.Builder()).hunger(6).saturation(12.8f).fastToEat().build();
     public static Food qazApple = (new Food.Builder()).hunger(14).saturation(17.2f).build();
     public static Food cat_cream = (new Food.Builder()).hunger(10).saturation(20f).build();
+    public static Food carrot_juice = (new Food.Builder().hunger(8).saturation(15f).build());
 }
