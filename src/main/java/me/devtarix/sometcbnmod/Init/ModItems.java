@@ -33,7 +33,7 @@ public class ModItems {
 
     //ToolItems Go Here
     public static final RegistryObject<PickaxeItem> EARTH_BREAKER = ITEMS.register("earth_breaker", () -> new PickaxeItem(ModItemTiers.TIERNINE, 10, 2.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)));
-    public static final RegistryObject<SwordItem> HOLY_SWORD = ITEMS.register("holy_sword", () -> new SwordItem(ModItemTiers.TIERNINE, 300, 4.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<SwordItem> SWORD_OF_SPACE = ITEMS.register("sword_of_space", () -> new SwordItem(ModItemTiers.TIERNINE, 300, 4.0f, new Item.Properties().group(ModGroup.ModItemGroup.instance).maxStackSize(1)   ));
 
     //ArmourItems Go Here
     public static final RegistryObject<ArmorItem> TEST_BOOTS = ITEMS.register("test_boots", () -> new ArmorItem(ModArmourTiers.TEST, EquipmentSlotType.FEET, new Item.Properties().group(ModGroup.ModItemGroup.instance)));
