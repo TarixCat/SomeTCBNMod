@@ -25,10 +25,10 @@
   "block.sometcbnmod.qazarite_ore": "Qazarite Ore",
   "item.sometcbnmod.devtarix": "DevTarix's Logo",
   "item.sometcbnmod.cat_cream": "Cat Cream",
-  "itemGroup.sometcbnmod": "SomeTCBNMod",
-  "item.sometcbnmod.test_boots":  "Testing Boots",
+  "itemGroup.sometcbnmodmain": "SomeTCBNMod - Main",
+  "itemGroup.sometchnmodl": "SomeTCBNMod - Memes and Stuff",
+  "itemGroup.sometcbnmodtemp": "SomeTCBNMod - Temporary",
   "item.sometcbnmod.earth_breaker": "Earth Breaker",
-  "item.sometcbnmod.test_chestplate": "Testing Chestplate",
   "item.sometcbnmod.carrot_bottle": "Carrot Juice",
   "item.sometcbnmod.sword_of_space": "Sword Of Space"
 }

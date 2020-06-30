@@ -15,10 +15,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum ModArmourTiers implements IArmorMaterial{
-    NOTUS(SomeTCBNMod.MODID + ":notus", 5, new int[] {5, 7, 9, 5}, 210, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.1f, () -> {
+    NOTUS(SomeTCBNMod.MODID + ":notus", 5, new int[] {5, 7, 9, 5}, 35, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.1f, () -> {
         return Ingredient.fromItems(ModItems.NOTUS_INGOT.get());
     }),
-    TEST(SomeTCBNMod.MODID + ":test", 5, new int[] {7, 9, 11, 7}, 420, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 6.9F, () -> {
+    ERROR(SomeTCBNMod.MODID + ":test", 5, new int[] {7, 18, 14, 7}, 100, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0f, () -> {
         return Ingredient.fromItems(ModItems.QAZARITE_INGOT.get());
     });
 
